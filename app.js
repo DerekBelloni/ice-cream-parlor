@@ -15,6 +15,7 @@ let menu = [
 
 
 let cart = []
+let total = 0
 
 
 function drawMenuOne() {
@@ -62,6 +63,12 @@ function buyIceCream(itemID) {
   // console.log('cart', cart)
   drawCart()
 
+}
+
+function checkOut() {
+  cart = []
+  total = 0
+  drawCart()
 }
 
 drawCart()
