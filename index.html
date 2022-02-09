@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+  <title>Ice Cream Parlor
+  </title>
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+</head>
+
+<body class="">
+  <header>
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <h1>Boise Creamery</h1>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="container-fluid">
+
+    <div class="row bg-primary">
+      <div class="col-6">
+        <h2>Ice Cream Flavors, Vessels, Toppings</h2>
+      </div>
+      <div class="col-6">
+        <h2>Shopping Cart</h2>
+      </div>
+    </div>
+
+    <div class="row bg-light">
+      <!--Template for menu-->
+      <div class="col-6">
+        <div class="row" id="icecream-menu">
+          <div class="col-6 d-flex selectable justify-content-between p-5" onclick="buyIceCream()">
+            <img class="img-fluid"
+              src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg" alt="">
+            <div class="d-flex justify-content-between p-2">
+              <h2>Cookie Dough</h2>
+              <p>$3.00/scoop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 d-flex m-auto bg-light shopping-cart">
+        <div class="row bg-white text-dark">
+          <div class="col-12">
+            <div class="row" id="shopping-cart">
+              <div class="d-flex justify-content-between p-1">
+                <h6>1 Cookie Dough</h6>
+                <p>$1.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--End of Template-->
+
+
+
+    <div class="row bg-info text-dark">
+      <div class="col-12">
+        <b>Total: $<span id="total">0.00</span></b>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+
+
+  <footer></footer>
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

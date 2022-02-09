@@ -1,0 +1,12 @@
+body {
+  background-color: lightcyan;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.shopping-cart {
+  min-height: 50vh;
+  background-color: antiquewhite;
+}
